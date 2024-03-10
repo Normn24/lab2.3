@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+@@include('components/page-blocks/_head.html',{
+"lang":"en",
+"title":"Pet Project4",
+})
+
+<body>
+	<header class="header">
+		<div class="header-menu">
+			<a href="#">
+				<img class="logo" src="./img/Logo-Med.png" alt="Logo">
+			</a>
+			<div class="wrapper-btn">
+				<button class="login-button" onclick="login()">
+					Log In
+				</button>
+
+				<button class="create-visit-button hidden" onclick="openModalWindow()">
+					Create Visit
+				</button>
+
+				<!-- <button class=" header__btn-make-visit" ">Створити візит</button> -->
+
+				<button class=" logout-button hidden">
+					Log Out
+				</button>
+			</div>
+		</div>
+	</header>
+
+	<div class="modal hidden" id="authorization-modal">
+		<div class="modal-content">
+			<p class="modal-title">Login to your account</p>
+			<button type="button" class="btn-close" aria-label="Close"></button>
+			<form class="modal-body">
+				<label for="email" class="form-label">Email:</label>
+				<input type="email" class="form-control" id="email" value="" required placeholder="Enter your email"
+					name="email">
+				<label for="pwd" class="form-label">Password</label>
+				<input type="password" class="form-control" id="pwd" required placeholder="Enter your password">
+				<button type="submit" class="send-button">Submit</button>
+			</form>
+		</div>
+	</div>
+
+
+
+
+
+	<!-- @@include('components/page-blocks/_main.html') -->
+	@@include('components/page-blocks/_createCard.html')
+	@@include('components/page-blocks/_filter.html')
+	@@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<div id="createModal" class="modal">
+    <div class="modal__content">
+        <form class="header__form form">
+            <div class="select select__edit-container">
+                <label for="createDoctor" class="select__label">Doctor</label>
+                <select id="createDoctor" class="edit__select form__selector-doctors">
+                    <option value="" disabled selected>Select doctor</option>
+                    <option value="Cardiologist" class="form__selector-option">Cardiologist</option>
+                    <option value="Dentist" class="form__selector-option">Dentist</option>
+                    <option value="Therapist" class="form__selector-option">Therapist</option>
+                </select>
+            </div>
+
+            <div class="input-group" id="create__inputName">
+                <input required="" type="text" name="text" autocomplete="off" id="createName"
+                    class="input form__patient-name">
+                <label for="createName" class="user-label">Name</label>
+            </div>
+
+            <div class="input-group" id="create__inputPurpose">
+                <input required="" type="text" name="text" autocomplete="off" id="createPurpose"
+                    class="input form__purpose">
+                <label for="createPurpose" class="user-label">Purpose</label>
+            </div>
+
+            <div class="input-group" id="create__inputDescription">
+                <input required="" type="text" name="text" autocomplete="off" id="createDescription"
+                    class="input form__description">
+                <label for="createDescription" class="user-label">Description</label>
+            </div>
+
+            <div class="select select__edit-container" id="create__selectPriority">
+                <label for="createPriority" class="select__label">Priority</label>
+                <select id="createPriority" class="edit__select form__selector-urgency">
+                    <option value="" disabled selected>Select priority</option>
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high"> High </option>
+                </select>
+            </div>
+
+            <div class="input-group" id="create__inputLastVisit">
+                <label for="createLastVisitDate" class="select__label">Date of the last visit</label>
+                <input required="" name="text" autocomplete="off" class="input edit__date form__last-visit" type="date"
+                    id="createLastVisitDate">
+            </div>
+
+            <div class="input-group" id="create__inputAge">
+                <input required="" type="number" name="text" autocomplete="off" id="createAge" class="input form__age">
+                <label for="createAge" class="user-label">Age</label>
+            </div>
+
+            <div class="input-group" id="create__inputPressure">
+                <input required="" type="number" name="text" autocomplete="off" id="createPressure"
+                    class="input form__pulse">
+                <label for="createPressure" class="user-label">Blood Pressure</label>
+            </div>
+
+            <div class="input-group" id="create__inputBMI">
+                <input required="" type="number" name="text" autocomplete="off" id="createBMI"
+                    class="input form__mass-index">
+                <label for="createBMI" class="user-label">Body Mass Index</label>
+            </div>
+
+            <div class="input-group" id="create__inputDisease">
+                <input required="" type="text" name="text" autocomplete="off" id="createDisease"
+                    class="input form__past-diseases">
+                <label for="createDisease" class="user-label">Cardiovascular Diseases</label>
+            </div>
+
+            <div class="input-group container-comment" id="create__inputComment">
+                <input required="" type="text" name="text" autocomplete="off" id="createComment"
+                    class="input form__comment">
+                <label for="createComment" class="user-label">Comment</label>
+            </div>
+
+            <p class="form__error">All fields must be filled in</p>
+            <div class="button__contianer">
+                <button class="form__button-close-form">Close</button>
+                <button class="form__button-create-visit">Create Visit</button>
+            </div>
+        </form>
+    </div>
+</div>

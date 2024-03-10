@@ -1,0 +1,63 @@
+<section class="filter__section">
+  <div id="filterForm" class="filter__form">
+    <div class="wave-group">
+      <input required="" type="text" class="input__search" id="searchInput" oninput="filterCards()">
+      <label class="label" for="searchInput">
+        <span class="label-char" style="--index: 0">S</span>
+        <span class="label-char" style="--index: 1">e</span>
+        <span class="label-char" style="--index: 2">a</span>
+        <span class="label-char" style="--index: 3">r</span>
+        <span class="label-char" style="--index: 4">c</span>
+        <span class="label-char" style="--index: 5">h</span>
+      </label>
+    </div>
+    <div class="select__filter">
+      <div class="select">
+        <select id="doctorFilter" onchange="filterCards()">
+          <option value="" disabled selected>Select doctor:</option>
+          <option value="">All</option>
+          <option value="Cardiologist">Cardiologist</option>
+          <option value="Therapist">Therapist</option>
+          <option value="Dentist">Dentist</option>
+        </select>
+      </div>
+    </div>
+    <div class="select__filter">
+      <div class="select">
+        <select id="statusFilter" onchange="filterCards()">
+          <option value="" disabled selected>Select status:</option>
+          <option value="">All</option>
+          <option value="active">Active</option>
+          <option value="completed">Completed</option>
+        </select>
+      </div>
+    </div>
+    <div class="select__filter">
+      <div class="select">
+        <select id="priorityFilter" onchange="filterCards()">
+          <option value="" disabled selected>Select priority:</option>
+          <option value="">All</option>
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div id="taskBoard" class="card__board"></div>
+
+  <div id="editModal" class="modal">
+    <div class="modal__content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div id="editFormContainer"></div>
+    </div>
+  </div>
+
+  <div id="detailsModal" class="modal">
+    <div class="modal__content">
+      <span class="close" onclick="closeShowMore()">&times;</span>
+      <div id="detailsContainer"></div>
+    </div>
+  </div>
+</section>

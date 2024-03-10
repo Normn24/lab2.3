@@ -101,7 +101,6 @@ async function login() {
       sessionStorage.token = token;
       showHide();
       form.style.display = 'none';
-      trueToken = token;
       await fetchAndDisplayCards();
     }
 

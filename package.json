@@ -6,7 +6,8 @@
   "scripts": {
     "html": "gulp",
     "start": "gulp",
-    "dist": "gulp style && gulp build_js && gulp rastr && gulp html"
+    "dist": "gulp style && gulp build_js && gulp rastr && gulp html",
+    "deploy": "gulp dist && gh-pages -d build"
   },
   "author": "",
   "license": "ISC",

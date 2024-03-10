@@ -4,16 +4,16 @@ const usersData = [
     email: '123',
     password: '1234',
     cards: [
-      { id: 1, name: 'wadwa', doctor: 'Cardiologist', description: 'Description 1', status: 'active', priority: 'medium' },
-      { id: 2, name: 'awd', doctor: 'Dentist', description: 'Description 2', status: 'active', priority: 'high' }
+      { id: 1, name: 'wadwa', doctor: 'Cardiologist', description: 'Description 1', status: 'active', priority: 'medium', age: 23, pulse: 87, massIndex: 67, pastDiseases: "none" },
+      { id: 2, name: 'awd', doctor: 'Dentist', description: 'Description 2', status: 'active', priority: 'high', lastVisit: "24.02.2012" }
     ]
   },
   {
-    email: 'user2@example.com',
+    email: 'user2example',
     password: 'password2',
     cards: [
-      { id: 3, name: 'awdawd', doctor: 'Therapist', description: 'Description 3', status: 'active', priority: 'high' },
-      { id: 4, name: 'Card 4', doctor: 'Cardiologist', description: 'Description 4', status: 'active', priority: 'medium' }
+      { id: 3, name: 'awdawd', doctor: 'Therapist', description: 'Description 3', status: 'active', priority: 'high', age: 34 },
+      { id: 4, name: 'Card 4', doctor: 'Cardiologist', description: 'Description 4', status: 'active', priority: 'medium', age: 23, pulse: 87, massIndex: 67, pastDiseases: "none" }
     ]
   }
 ];
